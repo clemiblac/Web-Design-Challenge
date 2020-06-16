@@ -107,3 +107,37 @@ div.absolute{
     height:120px;
     margin: 30px;
 }
+
+.container {
+    height: 700px;
+    margin: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: white;
+
+  }
+
+.cell-1 { 
+    grid-row: 1; 
+    grid-column: 1/4; 
+  }
+
+.cell-2 { 
+    margin-top: 80px;
+    grid-row: 1; 
+    grid-column: 1; 
+  }
+  .cell-3 { 
+    margin-top: 80px;
+    grid-row: 1; 
+    grid-column: 2; 
+  }
+  .cell-4 { 
+    grid-row: 2; 
+    grid-column: 1; 
+  }
+  .cell-5 { 
+    grid-row: 2; 
+    grid-column: 2; 
+  }
