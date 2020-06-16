@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<!-- CSS Stylesheets with Relative Paths -->
+
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Stylesheets with Relative Paths</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+ body{
+   background-color: #efeee7;
+   font-style: Georgia;
+   color:#333333;
+   margin-right:0px;
+   margin-left:0px;
+   margin-top:0px;
+   margin-bottom:0px;
+   padding-left:0px;
+   padding-right:0px;
+   padding-top:0px;
+   padding-bottom:0px;
+   text-align: left;
+
+ }
+ header{
+   background-color:#333333;
+ }
+  h1{
+    text-align: center;
+    background-color: black;
+    color:#eee;
+    font-size: 28px;
+    padding-top:10px;
+    padding-bottom: 10px;
+   
+  }
+
+  h2{
+    font-size: 24px;
+  }
+
+  #container{
+    margin: 0 auto;
+    width: 1024px;
+  }
+
+  #main-bio{
+    float: left;
+    width:70pc;
+    margin-left:25px;
+  }
+  #contact-info{
+    float: left;
+    widows: 300px;
+    line-height:15px;
+    width:250px;
+    height:220px;
+    text-align:left;
+    font-size: 14px;
+
+  }
+  #bio-image{
+    float:left;
+    margin:10px;
+    margin-bottom:0px;
+    height:200px;
+    width:200px;
+  }
+
+  a:link{
+    color:#d21034;
+  }
+
+  div.relative{
+  position: relative;
+  width: 400px;
+  height: 20px;
+  bottom:300px;
+  left:1150px;
+
+  }
+ div.absolute{
+
+  position: absolute;
+  top: 250px;
+  left: 50px;
+  width: 200px;
+  height: 100px;
+ }
+ p{
+  text-align: justify; 
+  font-size: 16px; 
+ }
+
+</style>
+<body>
+
+  <header>
+    <h1>Student Bio</h1>
+  </header>
+
+  <main class="container">
+    <section id="main-bio">
+      <section id="contact-info">
+        <div class="absolute">
+        <h2 id="bio-name">Clementine Sraha</h2>
+        </div>
+        <img id="bio-image" src="headshot_compressed.jpg"  alt="Clementine Sraha" /> 
+      </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut scelerisque ante, et eleifend velit. Integer in elementum ante.
+        Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus quis vehicula nisi. Suspendisse eget sagittis leo, 
+        imperdiet condimentum enim. Curabitur sed nisi et velit euismod fermentum vitae sit amet leo. Donec non justo nisi.
+
+        Donec a ultrices lorem. Phasellus a feugiat nibh. In porttitor dui quis lectus condimentum iaculis. Quisque finibus, nulla at fringilla
+        vestibulum, erat purus condimentum sem, nec condimentum neque magna in felis. Ut vestibulum vitae turpis at hendrerit. Ut suscipit 
+        egestas dui at sollicitudin. Phasellus at ultricies ex, id tincidunt metus. Sed orci elit, egestas nec odio ut, lacinia luctus ante.
+        
+        Morbi sed dapibus lacus. Nunc finibus tincidunt neque, ut euismod nisi dignissim ac. Pellentesque vel magna lobortis velit eleifend
+        malesuada. Curabitur efficitur, leo porttitor condimentum porta, orci eros semper mi, ut tempus mauris nibh eu arcu. Curabitur mattis 
+        magna ut nibh porttitor interdum. Nunc eu diam elementum felis ultrices vestibulum. Ut tincidunt consequat mi, quis dapibus ipsum 
+        elementum quis. Proin eleifend turpis id interdum finibus. Fusce aliquam massa ante, sit amet vestibulum sem euismod nec.
+        
+        Morbi at augue condimentum, mollis mi id, commodo neque. Duis venenatis neque in vulputate viverra. Maecenas vel mollis metus.
+        Fusce rhoncus eu dui in elementum. Maecenas id dui aliquam, consequat diam consectetur, scelerisque enim. Aliquam mattis elit 
+        scelerisque, elementum ligula a, porta sapien. Phasellus lobortis, mi ullamcorper euismod malesuada, risus mauris efficitur purus,
+        nec venenatis nisl magna eu eros. Vestibulum iaculis porttitor velit in euismod. Mauris luctus lacinia feugiat. Nunc lobortis elit
+        dui, ut egestas magna commodo et. Suspendisse vitae nisi velit. Duis quis tortor lobortis, elementum mauris nec, viverra orci.
+        <a href="http://www.lipsum.com/">www.lipsum.com</a></p>
+     
+    </section>
+
+    <div class="relative">
+      <aside id="contact-info">
+        <h2>Contact Info</h2>
+        <ul>
+          <li><strong>Email:</strong> <a href="#">clemiyarjah@gmail.com</a></li>
+          <li><strong>Github:</strong> <a href="#">clemiblac</a></li>
+          <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+</body>
+
+</html>
