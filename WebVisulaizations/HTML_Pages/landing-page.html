@@ -1,134 +1,47 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>Bootstrap Visualization Dashboard Landing Page</title>
+        <title>Visualization Dashboard Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link type="text/css" href="style.css" rel="stylesheet" media="all" >
     </head>
-    <style>
-        h1{
-            color: teal;
-            font-size: 30px;
-        }
-        h2{
-            color:white;
-            font-size: 20px;
-        }
-        .button1 {
-            background-color:teal;
-            color: white;
-            border:none;
-        
-            }
-        header{
-            background-color: white;
-        }
-        ul{
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            
-        }
-        li{
-            float: right;
-        }
-        li a{
-            display: block;
-            text-align: left;
-            padding:16px;
-            color: black;
-        }
-        li a:hover{
-            background-color: turquoise;
-        }
-        
-        body{
-            background-color: lightgray;
-        }
-        #container{
-            margin: 0 auto;
-            width: 1024px;  
-        }
-    
-        #main-image{
-            float:left;
-            margin-top:20px;
-            margin-bottom:20px;
-            margin-right: 20px;
-            margin-left: 20px;
-            height:270px;
-            width:370px;
-        }
-        #main_section{
-            float: left;
-            widows: 300px;
-            line-height:15px;
-            text-align:left;
-            font-size: 14px;
-        }
-        #sub_section{
-            float: right;
-            widows: 300px;
-            line-height:15px;
-            text-align:left;
-            font-size: 14px;
-            height:50px;
-            width:400px;
-        }
-        p{
-            text-align: justify; 
-            font-size: 24px; 
-            height: 600px;
-            width: 800px;
-            margin-left: 40px;
-        }
-        div.relative{
-            position: relative;
-            width: 400px;
-            bottom:700px;
-            left:900px;
-            height:50px;
-        }
-        .container img {
-            width: 120px;
-            height:120px;
-            margin: 30px;
-        }
-
-    </style>
 
     <body>
         <header>
             <div>
                 <ul>
-                    <button class="button button1" style="margin-left:60px"><h2>Latitude</h2></button>
-                    <li><a href="#home">Data</a></li>
-                    <li><a href="#news">Comparison</a></li>
-                    <li><a href="#contact">Plots</a></li>
-                
+                    <button class="button button1" style="margin-left:60px"><h2><a href="landing-page.html"></a>Latitude</h2></a></button>
+                    <li><a href="#Data">Data</a></li>
+                    <li><a href="‪comparison.html">Comparison</a></li>  
+                    <li><a href="#plots">Plots</a></li>
                 </ul>
             </div>
         </header>
         
+
+
         <main class="container">
-            <section>
-                    <div class="main-section">
-                        <h1 style="margin-left:60px;">Summary:Latitude vs. X</h1>
-                        <p><img id ="main-image" 
-                        src="C:\Users\clemi\Desktop\Clementine-GWU-HW\Web-Design-Challenge\WebVisulaizations\Resources\assets\images\Fig1.png"/>
-                        The purpose of this project was to analyze how weather changes as you get closet to the equator.
-                        To accomplish this analysis, we first pulled data from the the Open WeatherMap API to assemble a data set
-                        on over 500 cities.
-                        </br>
-                        </br>
-                        After assembling the dataset, we used Matplotlib to various aspects of the weather vs. latitude. Factors we looked
-                        at include temperature, cloudiness, wind speed and humidity. This site provides the source data and visulizations
-                        created as parts of the analysis as well  as explanations and descriptions of any trends and correlations witnessed.
-                        </p>
-                    </div>
+            <section >
+                <div class="main-section absolute"style="width:850px;background-color: white;">
+                    <h1>Summary:Latitude vs. X<hr></h1>
+                    <p><img id ="main-image" 
+                    src="C:\Users\clemi\Desktop\Clementine-GWU-HW\Web-Design-Challenge\WebVisulaizations\Resources\assets\images\Fig1.png"/>
+                    The purpose of this project was to analyze how weather changes as you get closet to the equator.
+                    To accomplish this analysis, we first pulled data from the Open WeatherMap API to assemble a data set
+                    on over 500 cities.
+                    </br>
+                    </br>
+                    After assembling the dataset, we used Matplotlib to various aspects of the weather vs. latitude. Factors we looked
+                    at include temperature, cloudiness, wind speed and humidity. This site provides the source data and visulizations
+                    created as parts of the analysis as well  as explanations and descriptions of any trends and correlations witnessed.
+                    </p>
+                </div>
             </section>
             <div class="relative">
                 <aside id="sub_section">
-                    <h1>Visualizations</h1>
-                    <div class="row">
+                    <h1>Visualizations<hr></h1>
+                    <div class="row" style="background-color: white;">
                         <div class="column">
                             <img src="C:\Users\clemi\Desktop\Clementine-GWU-HW\Web-Design-Challenge\WebVisulaizations\Resources\assets\images\Fig1.png">
                             <img src="C:\Users\clemi\Desktop\Clementine-GWU-HW\Web-Design-Challenge\WebVisulaizations\Resources\assets\images\Fig2.png">
@@ -142,6 +55,7 @@
                 </aside>
             </div>
         </main>
+        <footer>Copyright Coding Bootcamp 2017</footer>
         
     </body>
 </html>
