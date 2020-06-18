@@ -25,7 +25,7 @@ header{
 footer{
     background-color:grey;
     border-top-color:chocolate;
-    margin-top: 540px;
+    margin-top: 610px;
     text-align: center;
     border-top-style: solid;
     height: 40px;
@@ -88,7 +88,7 @@ body{
 /*Main page sections */
 #main_cell {
    width: 800px;
-   height:450px;
+   height:520px;
    background-color: white;
    float:left;
    margin-top:45px;
@@ -130,7 +130,7 @@ p{
     background-color: white;
 }
 
-
+/*Main cell characterisitcs for the plot visualization pages*/
 #plot_cells {
     width: 800px;
     height:800px;
@@ -247,10 +247,10 @@ table.paleBlueRows tfoot td {
 }
   
 /* Add an active class to highlight the current page */
-/*.active {
-    background-color: #4CAF50;
+.active {
+    background-color: salmon;
     color: white;
-}*/
+}
   
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
@@ -324,7 +324,8 @@ table.paleBlueRows tfoot td {
     }
 }
   
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.
+ This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
@@ -347,3 +348,12 @@ table.paleBlueRows tfoot td {
 }
 
 
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+}
