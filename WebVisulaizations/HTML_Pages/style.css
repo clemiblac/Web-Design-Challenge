@@ -32,6 +32,16 @@ footer{
     color:white;
 }
 
+#plot_footer{
+    background-color:grey;
+    border-top-color:chocolate;
+    margin-top: 900px;
+    text-align: center;
+    border-top-style: solid;
+    height: 40px;
+    color:white;
+}
+
 /*nav bar style*/
 ul{
     margin: 0;
@@ -59,10 +69,9 @@ A {
     color:white;
 } 
 
-
 body{
     background-color: lightgray;
-    margin:0px auto 0px auto;"
+    margin:0px auto 0px auto;
 }
 
 /*style for main image*/
@@ -85,7 +94,8 @@ body{
    margin-top:45px;
    margin-right: 35px;
    margin-left:50px;
- }
+}
+
 #side_cell {
     width:400px;
     height:450px;
@@ -93,6 +103,7 @@ body{
     margin-top: 45px;
     float:left;
 }
+
 #side_cell_grid{
     height: 350px;
     display: grid;
@@ -100,6 +111,7 @@ body{
     grid-template-rows: 1fr 1fr;
     margin-left:30px;
 }
+
 /*Paragraph for the main section*/
 p{
     text-align: justify; 
@@ -116,6 +128,17 @@ p{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: white;
+}
+
+
+#plot_cells {
+    width: 800px;
+    height:800px;
+    background-color:white;
+    float:left;
+    margin-top:45px;
+    margin-right: 35px;
+    margin-left:50px;
 }
 
 /* Grid styles */
