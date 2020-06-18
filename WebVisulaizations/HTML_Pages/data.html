@@ -7,16 +7,33 @@
         <link type="text/css" href="style.css" rel="stylesheet" media="all" >
     </head>
     <body>
-        <header>
-            <div>
-                <ul>
-                    <button class="button button1" style="margin-left:60px"><h2><a href="landing-page.html">Latitude</a></h2></button>
-                    <li><a href="data.html">Data</a></li>
-                    <li><a href="‪comparison.html">Comparison</a></li>  
-                    <li><a href="#plots">Plots</a></li>
-                </ul>
+      <header>
+        <div class="topnav" id="myTopnav">
+            <button class="button button1" style="margin-left:60px;">
+                <h2 style="margin: 0;"> 
+                    <a href="landing-page.html" style="color:white;font-size:22px;">
+                        Latitude
+                    </a></h2></a>
+            </button>
+
+            <a href="data.html">Data</a>
+            <a href="‪comparison.html">Comparison</a>
+            <div class="dropdown">
+                <button class="dropbtn">Plots
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            
+              
+                <div class="dropdown-content">
+                    <a href="Max_Temp.html">Max Temperature</a>
+                    <a href="Humidity.html">Humidity</a>
+                    <a href="Cloudiness.html">Cloudiness</a>
+                    <a href="Wind_Speed.html">Wind Speed</a>
+                </div>    
             </div>
-        </header>
+        </div>
+    </header>
+
         <main>
             <div id="table_container" class="table-responsive">
                 <br>

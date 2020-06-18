@@ -9,27 +9,36 @@
 
     <body>
         <header>
-            <div>
-                <ul>
-                    <button class="button button1" style="margin-left:60px;"><h2><a href="landing-page.html">Latitude</a></h2></a></button>
-                    <li><a href="data.html">Data</a></li>
-                    <li><a href="‪comparison.html">Comparison</a></li>  
-                    <li>
-                        <select name="Plots">
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                            <option value="mercedes">Mercedes</option>
-                            <option value="audi">Audi</option>
-                        </select>
-                        <a href="#plots">Plots</a></li>
-                </ul>
+            <div class="topnav" id="myTopnav">
+                <button class="button button1" style="margin-left:60px;">
+                    <h2 style="margin: 0;"> 
+                        <a href="landing-page.html" style="color:white;font-size:22px;">
+                            Latitude
+                        </a></h2></a>
+                </button>
+    
+                <a href="data.html">Data</a>
+                <a href="‪comparison.html">Comparison</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Plots
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                
+                  
+                    <div class="dropdown-content">
+                        <a href="Max_Temp.html">Max Temperature</a>
+                        <a href="Humidity.html">Humidity</a>
+                        <a href="Cloudiness.html">Cloudiness</a>
+                        <a href="Wind_Speed.html">Wind Speed</a>
+                    </div>    
+                </div>
             </div>
         </header>
 
 
         <main>
             <div id="main_cell">
-                <h1>Summary:Latitude vs. X<hr></h1>
+                <h1>Wind Speed<hr></h1>
                 <p style="padding:0px;"><img id ="main-image" 
                 src="C:\Users\clemi\Desktop\Clementine-GWU-HW\Web-Design-Challenge\WebVisulaizations\Resources\assets\images\Fig1.png"/>
                  The purpose of this project was to analyze how weather changes as you get closet to the equator.
