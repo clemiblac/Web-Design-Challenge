@@ -37,14 +37,16 @@
         </div>
     </header>
 
-        <main>
+        
             <div id="table_container" class="table-responsive">
                 <br>
                 <br>
                 <h1>Data<hr></h1>
-            
-                <p style="height: 0;margin-top:15px;margin-bottom:35px;">The following table includes all of the data used for plotting during this project</p>
-                <table border="1" class="paleBlueRows" style="margin-left:50px; width:1000px">
+                <div style="overflow-x:auto;">
+                  <p style="height: 0;margin-top:15px;margin-bottom:35px;">The following table includes all of the data used for plotting during this project</p>
+                  <!--Adding the overflow element around the table makes it responsive-->
+                
+                  <table border="1" class="paleBlueRows" style="margin-left:50px; width:1000px">
 
                     <thead>
                       <tr style="text-align: right;">
@@ -6626,11 +6628,10 @@
                         <td>1970-01-01</td>
                       </tr>
                     </tbody>
-                </table>
-                
+                  </table>
+                </div>
             </div>
         
-        </main>
     </body>
 
 
