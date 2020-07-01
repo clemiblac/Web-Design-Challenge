@@ -4,38 +4,45 @@
         <title>Visualization Dashboard Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" media="screen">
-        <link type="text/css" href="style.css" rel="stylesheet" media="all" >
-        <script src="media-query.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" media="all">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+           
+       
+       
+        
+       <link type="text/css" href="style.css" rel="stylesheet" media="all" >
+       
+       <script src="js/media-query.js"></script>
+       
     </head>
 
-    <body>
-        <header>
-            <div class="topnav" id="myTopnav">
-                <button class="button button1" style="margin-left:60px;">
-                    <h2 style="margin: 0;"> 
-                        <a href="landing-page.html" style="color:white;font-size:22px;">
-                            Latitude
-                        </a></h2></a>
-                </button>
-    
-                <a href="data.html">Data</a>
-                <a href="‪comparison.html">Comparison</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Plots
-                        <i class="fa fa-caret-down"></i>
+
+        <body>
+            <header>
+                <div class="topnav" id="myTopnav">
+                    <button class="button button1" style="margin-left:60px;">
+                        <h2 style="margin: 0;"> 
+                            <a href="landing-page.html" style="color:white;font-size:22px;">
+                                Latitude
+                            </a></h2></a>
                     </button>
-                
-                  
-                    <div class="dropdown-content">
-                        <a href="Max_Temp.html">Max Temperature</a>
-                        <a href="Humidity.html">Humidity</a>
-                        <a href="Cloudiness.html">Cloudiness</a>
+        
+                    <a href="data.html">Data</a>
+                    <a href="‪comparison.html">Comparison</a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                    
+                    <div class="dropdown-menu">
+                        <a href="Max_Temp.html">Max Temperature</a><br>
+                        <a href="Humidity.html">Humidity</a><br>
+                        <a href="Cloudiness.html">Cloudiness</a><br>
                         <a href="Wind_Speed.html">Wind Speed</a>
-                    </div>    
+                    </div>
+
+
+
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
                 </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-            </div>
         </header>
 
 
@@ -89,7 +96,9 @@
                 </div>
             </div>
         </div>
-         
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
     
     </body>
 </html>
